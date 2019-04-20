@@ -83,9 +83,9 @@ Citizen.CreateThread(function()
 
 		if IsDead then
 			DisableAllControlActions(0)
-			EnableControlAction(0, Keys['G'], true)
-			EnableControlAction(0, Keys['T'], true)
-			EnableControlAction(0, Keys['E'], true)
+			DisableControlAction(0, Keys['G'], true)
+			DisableControlAction(0, Keys['T'], true)
+			DisableControlAction(0, Keys['E'], true)
 		else
 			Citizen.Wait(500)
 		end
